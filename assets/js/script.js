@@ -141,19 +141,9 @@ document.querySelectorAll('button').forEach(button => {
   button.addEventListener('mouseout', () => button.classList.remove('fancy-hover'));
 });
 
-// Adding smooth scroll to page transitions
-document.querySelectorAll('[data-nav-link]').forEach(navLink => {
-  navLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetPage = document.querySelector(`#${e.target.innerHTML.toLowerCase()}`);
-    targetPage.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-
-// JavaScript to zoom out the page
+// Preserve the existing desktop scale, but do not force desktop zoom on phones/tablets.
 document.addEventListener("DOMContentLoaded", function() {
-  document.body.style.zoom = "0.82";
+  document.body.style.zoom = window.matchMedia("(min-width: 1024px)").matches ? "0.82" : "1";
 });
 
 
