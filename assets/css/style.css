@@ -1980,6 +1980,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .news-text a,
 .timeline-text a,
 .timeline-list span a,
+.research-bullets a,
 .publication-note a,
 .timeline-item-title a {
   display: inline;
@@ -2172,4 +2173,32 @@ textarea.form-input::-webkit-resizer { display: none; }
    long and short tabs (for example Resume -> Publications). */
 @media (min-width: 1024px) {
   html { scrollbar-gutter: stable; }
+}
+
+
+/* Publication titles are real links but keep the original title/status line spacing. */
+.publication-item a.publication-title {
+  display: block;
+  color: #07617a;
+  font-weight: var(--fw-500);
+  margin: 0;
+}
+
+
+/* Keep both Education entries internally aligned and equally spaced. */
+.resume[data-page="resume"] .education-details > div {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Lab names remain clickable without looking like normal hyperlink text. */
+a.lab-link {
+  color: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: none;
+}
+
+a.lab-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
