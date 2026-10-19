@@ -2202,3 +2202,15 @@ a.lab-link:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+.about .footer {
+  position: static;
+  width: fit-content;
+  max-width: 100%;
+  margin: 25px 0 0 auto;
+  padding: 5px;
+}
+
+.about.active .footer.visible {
+  bottom: auto;
+}
