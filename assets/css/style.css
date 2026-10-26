@@ -1874,6 +1874,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
+  .sidebar-info > [data-sidebar-btn] {
+    display: none;
+  }
 
   .info-content .name {
     white-space: nowrap;
