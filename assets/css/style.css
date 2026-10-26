@@ -1904,7 +1904,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .separator:last-of-type {
     margin: 15px 0;
-    opacity: 0;
   }
 
   .social-list { justify-content: center; }
