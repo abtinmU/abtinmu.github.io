@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="./assets/css/refinement.css">
 </head>
 
 
@@ -77,19 +78,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://github.com/abtinmu" class="social-link" target="_blank">
+            <a href="https://github.com/abtinmu" class="social-link" target="_blank" aria-label="GitHub">
               <ion-icon name="logo-github" style="font-size: 32px;"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/abtinmu/" class="social-link" target="_blank">
+            <a href="https://www.linkedin.com/in/abtinmu/" class="social-link" target="_blank" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin" style="font-size: 32px;"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://scholar.google.com/citations?user=am_eLgYAAAAJ&hl=en" class="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://scholar.google.com/citations?user=am_eLgYAAAAJ&hl=en" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
               <ion-icon name="school-outline" style="font-size: 32px;"></ion-icon>
             </a>
           </li>
@@ -113,7 +114,9 @@
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+      <div class="panel-header">
+        <h2 class="h2 article-title" id="page-title" tabindex="-1">About me</h2>
+      <nav class="navbar" aria-label="Portfolio sections">
 
         <ul class="navbar-list">
 
@@ -136,6 +139,7 @@
         </ul>
 
       </nav>
+      </div>
 
 
 
@@ -145,11 +149,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+      <article class="about  active" data-page="about" aria-labelledby="page-title">
 
 
         <section class="about-text" style="font-size: 1.16em;">
@@ -158,7 +158,7 @@
             Tübingen, supported by an
             <a href="https://eliza.school/about-us/" target="_blank"
               rel="noopener noreferrer"
-              style="display: inline; color: #315d69; font-weight: 600;">ELIZA</a>
+              style="display: inline; color: hsl(192.857143, 36.363636%, 33.215686%); font-weight: 600;">ELIZA</a>
           Research-Oriented Master's Scholarship. My research focuses on
           self-supervised representation learning and statistical machine learning,
           with broader interests in trustworthy AI.
@@ -174,12 +174,12 @@
             This includes
             <a href="./assets/files/KINDER_NeurIPS_v1.pdf" target="_blank"
               rel="noopener noreferrer"
-              style="display: inline; color: #315d69; font-weight: 600;"><em>KINDER</em></a>
+              style="display: inline; color: hsl(192.857143, 36.363636%, 33.215686%); font-weight: 600;"><em>KINDER</em></a>
             (NeurIPS 2026), on removing sensitive information from learned
             representations, and
             <a href="https://openreview.net/pdf?id=lXFl4K74gX" target="_blank"
               rel="noopener noreferrer"
-              style="display: inline; color: #315d69; font-weight: 600;"><em>FairSSL</em></a>
+              style="display: inline; color: hsl(192.857143, 36.363636%, 33.215686%); font-weight: 600;"><em>FairSSL</em></a>
             (ICML 2026), on fair multimodal self-supervised learning.
           </p>
 
@@ -188,11 +188,11 @@
             I'm also working on JEPA-based self-supervised learning with Professor
             <a href="https://hildekuehne.github.io/" target="_blank"
               rel="noopener noreferrer"
-              style="display: inline; color: #315d69; font-weight: 600;">Hilde Kuehne</a>
+              style="display: inline; color: hsl(192.857143, 36.363636%, 33.215686%); font-weight: 600;">Hilde Kuehne</a>
             at Tübingen, and on vision-language model causal interventions at
             <a href="https://www.epfl.ch/labs/schrimpflab/" target="_blank"
               rel="noopener noreferrer"
-              style="display: inline; color: #315d69; font-weight: 600;">EPFL's NeuroAI Lab</a>.
+              style="display: inline; color: hsl(192.857143, 36.363636%, 33.215686%); font-weight: 600;">EPFL's NeuroAI Lab</a>.
           </p>
         </section>
 
@@ -498,7 +498,7 @@
 </div>
       <div class="footer">
         Hosted on GitHub Pages. Modified from the<br>
-        <span style="display: inline;">original theme by <a href="https://github.com/codewithsadee" style="display: inline; color: #07617a;">codewithsadee</a>.</span>
+        <span style="display: inline;">original theme by <a href="https://github.com/codewithsadee" style="display: inline; color: hsl(193.043478, 89.147287%, 27.823529%);">codewithsadee</a>.</span>
       </div>
     </article>
 
@@ -510,11 +510,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+      <article class="resume" data-page="resume" aria-labelledby="page-title">
 
         <!-- <div class="document-links">
           <span>Full curriculum vitae</span>
@@ -539,12 +535,12 @@
 
               <h4 class="h4 timeline-item-title" style="font-size: 17px;">University of Tübingen</h4>
 
-              <span>October 2025 to Present · [<a href="./assets/files/Tuebingen-Transcript.pdf" target="_blank" rel="noopener noreferrer" style="display: inline; text-decoration: none; color: #07617a; font-weight: 480 !important; font-size: 18px;">Transcript</a>]</span>
+              <span>October 2025 to Present · [<a href="./assets/files/Tuebingen-Transcript.pdf" target="_blank" rel="noopener noreferrer" style="display: inline; text-decoration: none; color: hsl(193.043478, 89.147287%, 27.823529%); font-weight: 480 !important; font-size: 18px;">Transcript</a>]</span>
 
               <div class="timeline-text education-details" style="font-size: 1.1em;">
                 <div>Master of Science in Machine Learning</div>
-                <div>German GPA: 1.09, 1.00 = highest; WES U.S. equivalent: 4.00/4.00</div>
-                <div>Studies fully funded by <a href="https://eliza.school/about-us/" target="_blank" rel="noopener noreferrer" style="display: inline; color: #07617a; font-weight: 700;">ELIZA</a>'s Research-Oriented Master's Scholarship.</div>
+                <div>German GPA: 1.09, 1.00 = highest</div>
+                <div>Studies fully funded by <a href="https://eliza.school/about-us/" target="_blank" rel="noopener noreferrer" style="display: inline; color: hsl(193.043478, 89.147287%, 27.823529%); font-weight: 700;">ELIZA</a>'s Research-Oriented Master's Scholarship.</div>
               </div>
 
             </li>
@@ -555,7 +551,7 @@
 
               <h4 class="h4 timeline-item-title" style="font-size: 17px;">Middle East Technical University</h4>
 
-              <span>October 2020 to July 2025 · [<a href="./assets/files/Transcript.pdf" target="_blank" style="display: inline; text-decoration: none; color: #07617a; font-weight: 480 !important;font-size: 18px;">Transcript</a>]</span>
+              <span>October 2020 to July 2025 · [<a href="./assets/files/Transcript.pdf" target="_blank" style="display: inline; text-decoration: none; color: hsl(193.043478, 89.147287%, 27.823529%); font-weight: 480 !important;font-size: 18px;">Transcript</a>]</span>
 
               <div class="timeline-text education-details" style="font-size: 1.1em;">
                 <div>Major in Statistics &amp; Minor in Mathematics</div>
@@ -703,25 +699,21 @@
         - #PUBLICATIONS
       -->
 
-      <article class="resume" data-page="publications">
-
-        <header>
-          <h2 class="h2 article-title">Publications</h2>
-        </header>
+      <article class="resume" data-page="publications" aria-labelledby="page-title">
 
         <section class="timeline publication-section">
           <ol class="timeline-list">
             <li class="timeline-item publication-item">
-              <p class="timeline-text"><strong class="author-me">Abtin Mogharabin</strong>, Alp Toykan Kaplan, Jiaee Cheong, Sinan Kalkan (2026), <a class="publication-title" href="./assets/files/KINDER_NeurIPS_v1.pdf" target="_blank" rel="noopener noreferrer">KINDER: Kernel-based Independence for Fair Representation Learning via Prototype-space Erasure</a>NeurIPS 2026 [<a href="./assets/files/KINDER_NeurIPS_v1.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]</p>
+              <a class="publication-title" href="./assets/files/KINDER_NeurIPS_v1.pdf" target="_blank" rel="noopener noreferrer">KINDER: Kernel-based Independence for Fair Representation Learning via Prototype-space Erasure</a><p class="timeline-text"><strong class="author-me">Abtin Mogharabin</strong>, Alp Toykan Kaplan, Jiaee Cheong, Sinan Kalkan (2026)</p><p class="publication-meta">NeurIPS 2026 [<a href="https://neurips.cc/virtual/2026/poster/156049" target="_blank" rel="noopener noreferrer">NeurIPS</a>]</p>
             </li>
             <li class="timeline-item publication-item">
-              <p class="timeline-text">Jiaee Cheong*, <strong class="author-me">Abtin Mogharabin*</strong>, Paul Liang, Hatice Gunes, Sinan Kalkan (2026), <a class="publication-title" href="https://openreview.net/pdf?id=lXFl4K74gX" target="_blank" rel="noopener noreferrer">FairSSL: Fair multimodal self-supervised learning</a>ICML 2026 [<a href="https://openreview.net/pdf?id=lXFl4K74gX" target="_blank" rel="noopener noreferrer">PDF</a>]</p>
+              <a class="publication-title" href="https://openreview.net/pdf?id=lXFl4K74gX" target="_blank" rel="noopener noreferrer">FairSSL: Fair multimodal self-supervised learning</a><p class="timeline-text">Jiaee Cheong*, <strong class="author-me">Abtin Mogharabin*</strong>, Paul Liang, Hatice Gunes, Sinan Kalkan (2026)</p><p class="publication-meta">ICML 2026 [<a href="https://proceedings.mlr.press/v306/cheong26a.html" target="_blank" rel="noopener noreferrer">Proceedings</a>]</p>
             </li>
             <li class="timeline-item publication-item">
-              <p class="timeline-text"><strong class="author-me">Abtin Mogharabin</strong>, Vilda Purutçuoğlu. (2025), <a class="publication-title" href="https://dergipark.org.tr/en/download/article-file/4545485" target="_blank" rel="noopener noreferrer">A Network Analysis of Family Dynamics, Linguistic Influences, and Happiness in Turkey</a>Journal of Science: Engineering and Innovation, Gazi University, Part A, 12(3), 918-934 [<a href="https://dergipark.org.tr/en/download/article-file/4545485" target="_blank" rel="noopener noreferrer">PDF</a>]</p>
+              <a class="publication-title" href="https://dergipark.org.tr/en/download/article-file/4545485" target="_blank" rel="noopener noreferrer">A Network Analysis of Family Dynamics, Linguistic Influences, and Happiness in Turkey</a><p class="timeline-text"><strong class="author-me">Abtin Mogharabin</strong>, Vilda Purutçuoğlu. (2025)</p><p class="publication-meta">Journal of Science: Engineering and Innovation, Gazi University, Part A, 12(3), 918-934 [<a href="https://dergipark.org.tr/en/pub/gujsa/article/1625448" target="_blank" rel="noopener noreferrer">Journal</a>]</p>
             </li>
             <li class="timeline-item publication-item">
-              <p class="timeline-text"><strong class="author-me">Abtin Mogharabin</strong>. (2024), <a class="publication-title" href="./assets/files/Bayesian-Emotion.pdf" target="_blank" rel="noopener noreferrer">Modeling Emotional Functions in Medical Shared Decision-Making</a>Preprint [<a href="./assets/files/Bayesian-Emotion.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]</p>
+              <a class="publication-title" href="./assets/files/Bayesian-Emotion.pdf" target="_blank" rel="noopener noreferrer">Modeling Emotional Functions in Medical Shared Decision-Making</a><p class="timeline-text"><strong class="author-me">Abtin Mogharabin</strong>. (2024)</p><p class="publication-meta">Preprint [<a href="./assets/files/Bayesian-Emotion.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]</p>
             </li>
           </ol>
           <p class="publication-note">*Equal Contribution</p>
@@ -741,15 +733,12 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+      <article class="contact" data-page="contact" aria-labelledby="page-title">
 
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
+              title="Map of Tübingen, Germany"
               src="https://www.google.com/maps?q=T%C3%BCbingen%2C%20Germany&output=embed&hl=en"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
@@ -762,18 +751,19 @@
           <form id="contactForm" action="https://formspree.io/f/mqazqlqb" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-                <input type="text" name="title" id="title" class="form-input" placeholder="Message Title" required data-form-input>
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" aria-label="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" aria-label="Email address" required data-form-input>
+                <input type="text" name="title" id="title" class="form-input" placeholder="Message Title" aria-label="Message Title" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" aria-label="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn style="color:#b26c43">
+            <button class="form-btn" type="submit" disabled data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
             </button>
 
+            <p class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
         </form>
 
         </section>

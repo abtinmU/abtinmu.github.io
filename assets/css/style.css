@@ -1986,7 +1986,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .publication-note a,
 .timeline-item-title a {
   display: inline;
-  color: #07617a;
+  color: hsl(193.043478, 89.147287%, 27.823529%);
   font-weight: var(--fw-500);
 }
 
@@ -2005,7 +2005,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .document-links a {
-  color: #07617a;
+  color: hsl(193.043478, 89.147287%, 27.823529%);
   font-weight: var(--fw-600);
   white-space: nowrap;
 }
@@ -2033,7 +2033,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .publication-item .publication-title {
-  color: #07617a;
+  color: hsl(193.043478, 89.147287%, 27.823529%);
   font-weight: var(--fw-500);
 }
 
@@ -2181,7 +2181,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Publication titles are real links but keep the original title/status line spacing. */
 .publication-item a.publication-title {
   display: block;
-  color: #07617a;
+  color: hsl(193.043478, 89.147287%, 27.823529%);
   font-weight: var(--fw-500);
   margin: 0;
 }
